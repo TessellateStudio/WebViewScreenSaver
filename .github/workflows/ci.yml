@@ -9,6 +9,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+      with:
+          fetch-depth: 1
     - name: build
-      run: xcodebuild -project WebViewScreenSaver.xcodeproj -scheme WebViewScreenSaver -configuration Release clean archive -archivePath buildArchive/build.xcarchive CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+      run:  cd WebViewScreenSaver && xcodebuild -project WebViewScreenSaver.xcodeproj -scheme WebViewScreenSaver -configuration Release clean archive -archivePath buildArchive/build.xcarchive CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 
