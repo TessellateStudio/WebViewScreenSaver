@@ -315,7 +315,8 @@
 						TestTargetID = 641457061AEDC92100FB6CDF;
 					};
 					8D255AC50486D3F9007BF209 = {
-						DevelopmentTeam = BPXMH69X9T;
+						DevelopmentTeam = W54A427PZK;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -640,17 +641,21 @@
 		EF7AD72E08BB986600CE4634 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = W54A427PZK;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = WebViewScreenSaver_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.liquidx.${PRODUCT_NAME:identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tessellatestudio.WebViewScreenSaver;
 				PRODUCT_NAME = WebViewScreenSaver;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -658,15 +663,17 @@
 		EF7AD72F08BB986600CE4634 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = W54A427PZK;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = WebViewScreenSaver_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.liquidx.${PRODUCT_NAME:identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tessellatestudio.WebViewScreenSaver;
 				PRODUCT_NAME = WebViewScreenSaver;
 				WRAPPER_EXTENSION = saver;
 			};

@@ -1,0 +1,4 @@
+.saver
+*.saver/
+*.xcuserdatad
+.DS_Store
